@@ -1,0 +1,20 @@
+{
+	"name": "Trololio",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_icon": {
+			
+		}
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"content_scripts": [
+	{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["content.js"]
+	}
+	],
+}
